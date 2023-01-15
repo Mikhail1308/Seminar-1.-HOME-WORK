@@ -5,19 +5,40 @@ Console.WriteLine("Введите число= ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число= ");
 int numberC = Convert.ToInt32(Console.ReadLine());
-if ((numberB < numberA) && (numberA > numberC))
+int max = numberA;
+if (max < numberB)
 {
-    int numberMax = numberA;
-    Console.WriteLine($"Максимальное число= {numberA}");
+    max = numberB;
+    if (max < numberC)
+    {
+        max = numberC;
+    }
 }
+Console.WriteLine($"Максимальное число= {max}");
 
-else if ((numberA < numberB) && (numberB > numberC))
-{
-    int numberMax = numberB;
-    Console.WriteLine($"Максимальное число= {numberB}");
-}
-else
-{
-    int numberMax = numberC;
-    Console.WriteLine($"Максимальное число= {numberC}");
-}
+
+
+
+// Вариант 2. Программа, которая определяет максимум из трёх введенных  чисел
+// Console.WriteLine("Введите число= ");
+// int numberA = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число= ");
+// int numberB = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число= ");
+// int numberC = Convert.ToInt32(Console.ReadLine());
+// if ((numberB < numberA) && (numberA > numberC))
+// {
+//     int numberMax = numberA;
+//     Console.WriteLine($"Максимальное число= {numberA}");
+// }
+
+// else if ((numberA < numberB) && (numberB > numberC))
+// {
+//     int numberMax = numberB;
+//     Console.WriteLine($"Максимальное число= {numberB}");
+// }
+// else
+// {
+//     int numberMax = numberC;
+//     Console.WriteLine($"Максимальное число= {numberC}");
+// }
