@@ -1,18 +1,17 @@
-﻿// Программа показывает все четные числа в диапазоне от 1 до вводимого числа N
+﻿// Variant 1
+// Программа показывает все четные числа в диапазоне от 1 до вводимого числа N
 Console.WriteLine("Введите длинну диапазона чисел = ");
 int N = Convert.ToInt32(Console.ReadLine());
 Console.Write("Четные числа в заданном диапазоне -> ");
-for (int i = 1; i <= N; i = i + 1)
-if (i % 2 == 0)
-{
+for (int i = 2; i <= N; i = i + 2)
     Console.Write(i + "  ");
-}
 Console.WriteLine("Введите Enter для завершения");
 Console.ReadLine();
 
 
 
 
+// Variant 2
 // Программа показывает все четные числа в диапазоне от 1 до вводимого числа N
 // Console.WriteLine("Введите длинну диапазона чисел = ");
 // int N = Convert.ToInt32(Console.ReadLine());
